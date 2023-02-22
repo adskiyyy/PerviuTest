@@ -125,7 +125,7 @@ class VK_Sender(config.Settings):
         print(self.banner)
         self.api = VK_Sender.get_proxy_state_and_session(self)
         self.get_groups_user = VK_Sender.get_groups_user(self, self.api)
-        self.vk_send_messages = VK_Sender.vk_send_messages(self, self.api)
+        self.vk_send_messages = VK_Sender.vk_send_messages(self, api)
 
 
 
